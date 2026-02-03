@@ -1,6 +1,6 @@
-#include "ofBufferObject.h"
-#include "ofAppRunner.h"
-#include "ofGLUtils.h"
+#include "ofBufferObject.hpp"
+#include "ofAppRunner.hpp"
+#include "ofGLUtils.hpp"
 
 
 ofBufferObject::Data::Data()

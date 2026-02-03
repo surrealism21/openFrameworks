@@ -29,19 +29,19 @@
  */
 
 
-#include "ofPixels.h"
-#include "ofMediaFoundationPlayer.h"
-#include "ofLog.h"
+#include "ofPixels.hpp"
+#include "ofMediaFoundationPlayer.hpp"
+#include "ofLog.hpp"
 #include <string.h>
 #include <mfapi.h>
 #include <mferror.h>
-#include "ofTexture.h"
-#include "ofGLUtils.h"
-#include "ofGraphics.h"
-#include "ofEventUtils.h"
+#include "ofTexture.hpp"
+#include "ofGLUtils.hpp"
+#include "ofGraphics.hpp"
+#include "ofEventUtils.hpp"
 
 // declares some shared Media Foundation code
-#include "ofMediaFoundationSoundPlayer.h"
+#include "ofMediaFoundationSoundPlayer.hpp"
 
 using namespace Microsoft::WRL;
 

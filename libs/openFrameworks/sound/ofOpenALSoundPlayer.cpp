@@ -1,4 +1,4 @@
-#include "ofOpenALSoundPlayer.h"
+#include "ofOpenALSoundPlayer.hpp"
 
 #ifdef OF_SOUND_PLAYER_OPENAL
 
@@ -8,9 +8,9 @@
 #include <glm/gtc/constants.hpp>
 #include <glm/ext/scalar_common.hpp>
 
-#include "ofLog.h"
-#include "ofEvents.h"
-#include "ofUtils.h"
+#include "ofLog.hpp"
+#include "ofEvents.hpp"
+#include "ofUtils.hpp"
 
 #if defined (TARGET_OF_IOS) || defined (TARGET_OSX)
 #include <OpenAL/al.h>

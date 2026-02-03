@@ -1,15 +1,15 @@
-#include "ofImage.h"
-#include "ofAppRunner.h"
-#include "ofPixels.h"
-#include "ofFileUtils.h"
+#include "ofImage.hpp"
+#include "ofAppRunner.hpp"
+#include "ofPixels.hpp"
+#include "ofFileUtils.hpp"
 
 #include <FreeImage.h>
 
-#include "ofURLFileLoader.h"
+#include "ofURLFileLoader.hpp"
 #include <uriparser/Uri.h>
 
 #if defined(TARGET_ANDROID)
-#include "ofxAndroidUtils.h"
+#include "ofxAndroidUtils.hpp"
 #endif
 
 

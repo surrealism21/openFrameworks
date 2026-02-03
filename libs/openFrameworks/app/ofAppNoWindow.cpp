@@ -1,10 +1,10 @@
-#include "ofAppNoWindow.h"
-#include "ofGraphics.h"
-#include "ofPath.h"
-#include "of3dGraphics.h"
+#include "ofAppNoWindow.hpp"
+#include "ofGraphics.hpp"
+#include "ofPath.hpp"
+#include "of3dGraphics.hpp"
 #include <memory>
 
-#include "ofConstants.h"
+#include "ofConstants.hpp"
 #ifndef TARGET_WIN32
 	#include <unistd.h>
 #endif

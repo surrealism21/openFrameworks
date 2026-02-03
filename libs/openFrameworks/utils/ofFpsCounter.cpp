@@ -1,5 +1,5 @@
-#include "ofFpsCounter.h"
-#include <ofUtils.h>
+#include "ofFpsCounter.hpp"
+#include "ofUtils.hpp"
 using namespace std::chrono;
 
 ofFpsCounter::ofFpsCounter() {

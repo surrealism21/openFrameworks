@@ -2,10 +2,10 @@
  *  ofAVFoundationGrabber.mm
  */
 
-#include "ofAVFoundationGrabber.h"
-//#include "ofVectorMath.h"
-#include "ofRectangle.h"
-#include "ofGLUtils.h"
+#include "ofAVFoundationGrabber.hpp"
+//#include "ofVectorMath.hpp"
+#include "ofRectangle.hpp"
+#include "ofGLUtils.hpp"
 #include <TargetConditionals.h>
 #import <Accelerate/Accelerate.h>
 

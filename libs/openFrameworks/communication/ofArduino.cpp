@@ -44,9 +44,9 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "ofArduino.h"
-#include "ofUtils.h"
-#include "ofLog.h"
+#include "ofArduino.hpp"
+#include "ofUtils.hpp"
+#include "ofLog.hpp"
 #include <climits>
 
 using std::vector;

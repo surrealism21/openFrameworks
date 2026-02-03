@@ -1,9 +1,9 @@
-#include "ofMaterial.h"
-#include "ofLight.h"
-#include "ofShadow.h"
-#include "ofCubeMap.h"
-#include "ofImage.h"
-#include "ofGLProgrammableRenderer.h"
+#include "ofMaterial.hpp"
+#include "ofLight.hpp"
+#include "ofShadow.hpp"
+#include "ofCubeMap.hpp"
+#include "ofImage.hpp"
+#include "ofGLProgrammableRenderer.hpp"
 
 #if !defined(GLM_FORCE_CTOR_INIT)
 	#define GLM_FORCE_CTOR_INIT
@@ -514,7 +514,7 @@ void ofMaterial::setDisplacementStrength( const float& astrength ) {
 	data.displacementStrength = astrength;
 	if(isBound() && isPBR() && currentRenderShader ) {
 		if( hasTexture(OF_MATERIAL_TEXTURE_DISPLACEMENT) ) {
-			currentRenderShader->setUniform1f("mat_displacement_strength", data.displacementStrength );
+			currentRenderShader->setUniform1f("mat_displacement_strengthpp", data.displacementStrength );
 		}
 	}
 	if( !isPBR() ) {
@@ -527,7 +527,7 @@ void ofMaterial::setDisplacementNormalsStrength( const float& astrength ) {
 	data.displacementNormalsStrength = astrength;
 	if(isBound() && isPBR() && currentRenderShader ) {
 		if( hasTexture(OF_MATERIAL_TEXTURE_DISPLACEMENT) ) {
-			currentRenderShader->setUniform1f("mat_displacement_normals_strength", data.displacementNormalsStrength );
+			currentRenderShader->setUniform1f("mat_displacement_normals_strengthpp", data.displacementNormalsStrength );
 		}
 	}
 }
@@ -1070,8 +1070,8 @@ void ofMaterial::updateMaterial(const ofShader & shader,ofGLProgrammableRenderer
 		}
 		
 		if( hasTexture(OF_MATERIAL_TEXTURE_DISPLACEMENT) ) {
-			shader.setUniform1f("mat_displacement_strength", data.displacementStrength );
-			shader.setUniform1f("mat_displacement_normals_strength", data.displacementNormalsStrength );
+			shader.setUniform1f("mat_displacement_strengthpp", data.displacementStrength );
+			shader.setUniform1f("mat_displacement_normals_strengthpp", data.displacementNormalsStrength );
 		}
 		if( hasTexture(OF_MATERIAL_TEXTURE_NORMAL) || hasTexture(OF_MATERIAL_TEXTURE_DISPLACEMENT) ) {
 			shader.setUniform1f("mat_normal_mix", data.normalGeomToNormalMapMix );
@@ -1198,7 +1198,7 @@ void ofMaterial::updateLights(const ofShader & shader,ofGLProgrammableRenderer &
 				shader.setUniform3f("lights["+idx+"].halfVector", halfVector);
 			}
 		}else if(light->lightType==OF_LIGHT_AREA){
-			shader.setUniform1f("lights["+idx+"].width", light->width);
+			shader.setUniform1f("lights["+idx+"].widthpp", light->width);
 			shader.setUniform1f("lights["+idx+"].height", light->height);
 			glm::vec3 direction = light->direction;
 			if( !isPBR() ) {

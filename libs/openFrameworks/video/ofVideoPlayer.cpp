@@ -1,7 +1,7 @@
-#include "ofVideoPlayer.h"
-#include "ofAppRunner.h"
-#include "ofGLUtils.h"
-#include "ofPixels.h"
+#include "ofVideoPlayer.hpp"
+#include "ofAppRunner.hpp"
+#include "ofGLUtils.hpp"
+#include "ofPixels.hpp"
 #include <algorithm>
 
 //------------------------------------------------  video player
@@ -37,47 +37,47 @@
 
 
 #ifdef OF_VIDEO_PLAYER_GSTREAMER
-	#include "ofGstVideoPlayer.h"
+	#include "ofGstVideoPlayer.hpp"
 	#define OF_VID_PLAYER_TYPE ofGstVideoPlayer
 #endif
 
 //#ifdef OF_VIDEO_PLAYER_QUICKTIME
-//	#include "ofQuickTimePlayer.h"
+//	#include "ofQuickTimePlayer.hpp"
 //	#define OF_VID_PLAYER_TYPE ofQuickTimePlayer
 //#endif
 //
 //#ifdef OF_VIDEO_PLAYER_QTKIT
-//	#include "ofQTKitPlayer.h"
+//	#include "ofQTKitPlayer.hpp"
 //	#define OF_VID_PLAYER_TYPE ofQTKitPlayer
 //#endif
 
 #ifdef OF_VIDEO_PLAYER_AVFOUNDATION
-	#include "ofAVFoundationPlayer.h"
+	#include "ofAVFoundationPlayer.hpp"
 	#define OF_VID_PLAYER_TYPE ofAVFoundationPlayer
 #endif
 
 #ifdef OF_VIDEO_PLAYER_DIRECTSHOW
-	#include "ofDirectShowPlayer.h"
+	#include "ofDirectShowPlayer.hpp"
 	#define OF_VID_PLAYER_TYPE ofDirectShowPlayer
 #endif
 
 #if defined(OF_VIDEO_PLAYER_MEDIA_FOUNDATION)
-	#include "ofMediaFoundationPlayer.h"
+	#include "ofMediaFoundationPlayer.hpp"
 	#define OF_VID_PLAYER_TYPE ofMediaFoundationPlayer
 #endif
 
 #ifdef OF_VIDEO_PLAYER_IOS
-	#include "ofxiOSVideoPlayer.h"
+	#include "ofxiOSVideoPlayer.hpp"
 	#define OF_VID_PLAYER_TYPE ofxiOSVideoPlayer
 #endif
 
 #ifdef OF_VIDEO_PLAYER_ANDROID
-	#include "ofxAndroidVideoPlayer.h"
+	#include "ofxAndroidVideoPlayer.hpp"
 	#define OF_VID_PLAYER_TYPE ofxAndroidVideoPlayer
 #endif
 
 #ifdef OF_VIDEO_PLAYER_EMSCRIPTEN
-	#include "ofxEmscriptenVideoPlayer.h"
+	#include "ofxEmscriptenVideoPlayer.hpp"
 	#define OF_VID_PLAYER_TYPE ofxEmscriptenVideoPlayer
 #endif
 

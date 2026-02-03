@@ -1,7 +1,7 @@
-#include "ofTrueTypeFont.h"
-#include "ofGraphics.h"
-#include "ofPixels.h"
-#include "ofPath.h"
+#include "ofTrueTypeFont.hpp"
+#include "ofGraphics.hpp"
+#include "ofPixels.hpp"
+#include "ofPath.hpp"
 
 #include <ft2build.h>
 #include <algorithm>
@@ -423,7 +423,7 @@ void ofTrueTypeFont::setGlobalDpi(int newDpi){
 
 
 #if defined(TARGET_ANDROID)
-#include "ofxAndroidUtils.h"
+#include "ofxAndroidUtils.hpp"
 #endif
 
 //------------------------------------------------------------------

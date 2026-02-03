@@ -1,6 +1,6 @@
-#include "ofVec2f.h"
-#include "ofVec3f.h"
-#include "ofVec4f.h"
+#include "ofVec2f.hpp"
+#include "ofVec3f.hpp"
+#include "ofVec4f.hpp"
 
 #if !defined(GLM_FORCE_CTOR_INIT)
 	#define GLM_FORCE_CTOR_INIT

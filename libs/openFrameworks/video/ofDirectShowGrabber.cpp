@@ -1,5 +1,5 @@
-#include "ofDirectShowGrabber.h"
-#include "ofUtils.h"
+#include "ofDirectShowGrabber.hpp"
+#include "ofUtils.hpp"
 #ifdef TARGET_WIN32
 
 //--------------------------------------------------------------------

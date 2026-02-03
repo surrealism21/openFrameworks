@@ -1,7 +1,7 @@
-#include "ofMath.h"
-#include "ofNoise.h"
-#include "ofPolyline.h"
-#include "ofRandomDistributions.h"
+#include "ofMath.hpp"
+#include "ofNoise.hpp"
+#include "ofPolyline.hpp"
+#include "ofRandomDistributions.hpp"
 
 #include <float.h>
 

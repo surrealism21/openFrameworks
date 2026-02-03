@@ -1,8 +1,8 @@
-#include "ofRtAudioSoundStream.h"
+#include "ofRtAudioSoundStream.hpp"
 #if defined(OF_RTAUDIO)
-#include "ofUtils.h"
-#include "ofAppRunner.h"
-#include "ofLog.h"
+#include "ofUtils.hpp"
+#include "ofAppRunner.hpp"
+#include "ofLog.hpp"
 #include <RtAudio.h>
 #include <string.h>
 

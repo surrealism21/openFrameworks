@@ -1,9 +1,9 @@
-#include "ofVideoGrabber.h"
-#include "ofVideoBaseTypes.h"
-#include "ofGLUtils.h"
-#include "ofAppRunner.h"
-#include "ofPixels.h"
-#include "ofConstants.h"
+#include "ofVideoGrabber.hpp"
+#include "ofVideoBaseTypes.hpp"
+#include "ofGLUtils.hpp"
+#include "ofAppRunner.hpp"
+#include "ofPixels.hpp"
+#include "ofConstants.hpp"
 
 // ------------------------------------------------ capture
 // check if any video capture system is already defined from the compiler
@@ -50,42 +50,42 @@
 #endif
 
 #ifdef OF_VIDEO_CAPTURE_IOS
-	#include "ofxiOSVideoGrabber.h"
+	#include "ofxiOSVideoGrabber.hpp"
 	#define OF_VID_GRABBER_TYPE ofxiOSVideoGrabber
 #endif
 
 // #ifdef OF_VIDEO_CAPTURE_QUICKTIME
-// 	#include "ofQuickTimeGrabber.h"
+// 	#include "ofQuickTimeGrabber.hpp"
 // 	#define OF_VID_GRABBER_TYPE ofQuickTimeGrabber
 // #endif
 
 // #ifdef OF_VIDEO_CAPTURE_QTKIT
-// 	#include "ofQTKitGrabber.h"
+// 	#include "ofQTKitGrabber.hpp"
 // 	#define OF_VID_GRABBER_TYPE ofQTKitGrabber
 // #endif
 
 #ifdef OF_VIDEO_CAPTURE_AVF
-	#include "ofAVFoundationGrabber.h"
+	#include "ofAVFoundationGrabber.hpp"
 	#define OF_VID_GRABBER_TYPE ofAVFoundationGrabber
 #endif
 
 #ifdef OF_VIDEO_CAPTURE_DIRECTSHOW
-	#include "ofDirectShowGrabber.h"
+	#include "ofDirectShowGrabber.hpp"
 	#define OF_VID_GRABBER_TYPE ofDirectShowGrabber
 #endif
 
 #ifdef OF_VIDEO_CAPTURE_GSTREAMER
-	#include "ofGstVideoGrabber.h"
+	#include "ofGstVideoGrabber.hpp"
 	#define OF_VID_GRABBER_TYPE ofGstVideoGrabber
 #endif
 
 #ifdef OF_VIDEO_CAPTURE_ANDROID
-	#include "ofxAndroidVideoGrabber.h"
+	#include "ofxAndroidVideoGrabber.hpp"
 	#define OF_VID_GRABBER_TYPE ofxAndroidVideoGrabber
 #endif
 
 #ifdef OF_VIDEO_CAPTURE_EMSCRIPTEN
-	#include "ofxEmscriptenVideoGrabber.h"
+	#include "ofxEmscriptenVideoGrabber.hpp"
 	#define OF_VID_GRABBER_TYPE ofxEmscriptenVideoGrabber
 #endif
 

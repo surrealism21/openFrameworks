@@ -1,6 +1,6 @@
-#include "of3dUtils.h"
-#include "ofAppRunner.h"
-#include "ofGraphicsBaseTypes.h"
+#include "of3dUtils.hpp"
+#include "ofAppRunner.hpp"
+#include "ofGraphicsBaseTypes.hpp"
 
 #define GLM_FORCE_CTOR_INIT
 #define GLM_ENABLE_EXPERIMENTAL

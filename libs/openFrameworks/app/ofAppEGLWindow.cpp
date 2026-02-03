@@ -1,12 +1,12 @@
-#include "ofAppEGLWindow.h"
+#include "ofAppEGLWindow.hpp"
 
-#include "ofGraphics.h" // used in runAppViaInfiniteLoop()
-#include "ofAppRunner.h"
-#include "ofUtils.h"
-#include "ofFileUtils.h"
-#include "ofGLProgrammableRenderer.h"
-#include "ofGLRenderer.h"
-// #include "ofVectorMath.h"
+#include "ofGraphics.hpp" // used in runAppViaInfiniteLoop()
+#include "ofAppRunner.hpp"
+#include "ofUtils.hpp"
+#include "ofFileUtils.hpp"
+#include "ofGLProgrammableRenderer.hpp"
+#include "ofGLRenderer.hpp"
+// #include "ofVectorMath.hpp"
 #include <assert.h>
 // x11
 #include <X11/Xutil.h>
@@ -160,7 +160,7 @@ static std::string eglErrorString(EGLint err) {
 			CASE_STR(EGL_BAD_CURRENT_SURFACE, "current window, pbuffer or pixmap surface is no longer valid");
 			CASE_STR(EGL_BAD_DISPLAY, "invalid display specified");
 			CASE_STR(EGL_BAD_SURFACE, "invalid surface specified");
-			CASE_STR(EGL_BAD_MATCH, "bad argument match");
+			CASE_STR(EGL_BAD_MATCH, "bad argument matchpp");
 			CASE_STR(EGL_BAD_PARAMETER, "invalid parameter");
 			CASE_STR(EGL_BAD_NATIVE_PIXMAP, "invalid NativePixmap");
 			CASE_STR(EGL_BAD_NATIVE_WINDOW, "invalid NativeWindow");

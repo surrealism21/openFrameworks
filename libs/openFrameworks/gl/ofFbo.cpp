@@ -1,24 +1,24 @@
-#include "ofFbo.h"
-// #include "ofAppRunner.h"
-// #include "ofUtils.h"
-// #include "ofGraphics.h"
+#include "ofFbo.hpp"
+// #include "ofAppRunner.hpp"
+// #include "ofUtils.hpp"
+// #include "ofGraphics.hpp"
 
-// #include "ofGLRenderer.h"
-#include "ofBufferObject.h"
-#include "ofGLUtils.h"
-#include "ofLog.h"
-#include "ofPixels.h"
+// #include "ofGLRenderer.hpp"
+#include "ofBufferObject.hpp"
+#include "ofGLUtils.hpp"
+#include "ofLog.hpp"
+#include "ofPixels.hpp"
 
 // MARK: Targets
-// #include "ofConstants.h"
+// #include "ofConstants.hpp"
 #include <unordered_map>
 
 #ifdef TARGET_OPENGLES
 #include <dlfcn.h>
 #endif
 #ifdef TARGET_ANDROID
-#include "ofEventUtils.h"
-#include "ofxAndroidUtils.h"
+#include "ofEventUtils.hpp"
+#include "ofxAndroidUtils.hpp"
 #endif
 
 using std::unordered_map;

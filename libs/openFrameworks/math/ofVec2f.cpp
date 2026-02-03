@@ -1,6 +1,6 @@
-#include "ofVec2f.h"
-#include "ofVec3f.h"
-#include "ofVec4f.h"
+#include "ofVec2f.hpp"
+#include "ofVec3f.hpp"
+#include "ofVec4f.hpp"
 
 ofVec2f::ofVec2f( const ofVec3f& vec ) {
 	x = vec.x;

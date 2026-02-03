@@ -5,8 +5,8 @@
  *      Author: arturo
  */
 
-#include "ofGstVideoGrabber.h"
-#include "ofPixels.h"
+#include "ofGstVideoGrabber.hpp"
+#include "ofPixels.hpp"
 
 #include <gst/video/video.h>
 

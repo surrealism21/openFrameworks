@@ -1,6 +1,6 @@
-#include "ofParameter.h"
-#include "ofPoint.h"
-#include "ofUtils.h"
+#include "ofParameter.hpp"
+#include "ofPoint.hpp"
+#include "ofUtils.hpp"
 
 using std::string;
 

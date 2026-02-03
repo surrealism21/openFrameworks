@@ -1,8 +1,8 @@
-#include "ofFmodSoundPlayer.h"
+#include "ofFmodSoundPlayer.hpp"
 #ifdef OF_SOUND_PLAYER_FMOD
 
-#include "ofUtils.h"
-#include "ofLog.h"
+#include "ofUtils.hpp"
+#include "ofLog.hpp"
 
 
 static bool bFmodInitialized_ = false;

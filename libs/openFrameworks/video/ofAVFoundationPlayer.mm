@@ -5,13 +5,13 @@
 //
 
 //--------------------------------------------------------------
-#import "ofAVFoundationPlayer.h"
-#import "ofAVFoundationVideoPlayer.h"
-#include "ofRectangle.h"
-#include "ofGLUtils.h"
+#import "ofAVFoundationPlayer.hpp"
+#import "ofAVFoundationVideoPlayer.hpp"
+#include "ofRectangle.hpp"
+#include "ofGLUtils.hpp"
 
 #ifdef TARGET_OSX
-	#include "ofTexture.h"
+	#include "ofTexture.hpp"
 #endif
 
 //--------------------------------------------------------------

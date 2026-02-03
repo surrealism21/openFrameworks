@@ -1,11 +1,11 @@
-#include "ofBufferObject.h"
-#include "ofCubeMap.h"
-#include "ofGLProgrammableRenderer.h"
-#include "ofLight.h"
-#include "ofShader.h"
-#include "ofShadow.h"
+#include "ofBufferObject.hpp"
+#include "ofCubeMap.hpp"
+#include "ofGLProgrammableRenderer.hpp"
+#include "ofLight.hpp"
+#include "ofShader.hpp"
+#include "ofShadow.hpp"
 #ifdef TARGET_ANDROID
-    #include "ofxAndroidUtils.h"
+    #include "ofxAndroidUtils.hpp"
 #endif
 #include <regex>
 #include <vector>
@@ -1494,7 +1494,7 @@ bool ofShader::setShadowUniforms(int textureLocation) const {
         }
 
         setUniform3f(shadowAddress + ".lightWorldPos", shadow->position);
-        setUniform1f(shadowAddress + ".strength", shadow->strength);
+        setUniform1f(shadowAddress + ".strengthpp", shadow->strength);
         setUniform3f(shadowAddress + ".lightUp", shadow->up);
         setUniform3f(shadowAddress + ".lightRight", shadow->right);
         setUniform1f(shadowAddress + ".shadowType", (float)shadow->shadowType);

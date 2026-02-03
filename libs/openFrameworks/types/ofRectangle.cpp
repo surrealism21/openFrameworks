@@ -1,6 +1,6 @@
-#include "ofRectangle.h"
-#include "ofLog.h"
-#include "ofMath.h"
+#include "ofRectangle.hpp"
+#include "ofLog.hpp"
+#include "ofMath.hpp"
 
 using std::ostream;
 using std::istream;

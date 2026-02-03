@@ -1,5 +1,5 @@
-#include "ofPath.h"
-#include "ofColor.h"
+#include "ofPath.hpp"
+#include "ofColor.hpp"
 
 using std::vector;
 

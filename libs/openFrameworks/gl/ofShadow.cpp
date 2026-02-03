@@ -1,12 +1,12 @@
-#include "ofShadow.h"
-#include "of3dUtils.h"
-#include "ofGLBaseTypes.h"
-#include "ofGLUtils.h"
-#include "ofLight.h"
-#include "ofGLProgrammableRenderer.h"
+#include "ofShadow.hpp"
+#include "of3dUtils.hpp"
+#include "ofGLBaseTypes.hpp"
+#include "ofGLUtils.hpp"
+#include "ofLight.hpp"
+#include "ofGLProgrammableRenderer.hpp"
 // MARK: ofConstants Targets
-#include "ofConstants.h"
-#include "ofMaterial.h"
+#include "ofConstants.hpp"
+#include "ofMaterial.hpp"
 
 #if !defined(GLM_FORCE_CTOR_INIT)
 	#define GLM_FORCE_CTOR_INIT

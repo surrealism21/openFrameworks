@@ -5,10 +5,10 @@
  *      Author: arturo
  */
 
-#include "ofSoundBuffer.h"
-#include "ofSoundUtils.h"
-#include "ofLog.h"
-#include "ofMath.h"
+#include "ofSoundBuffer.hpp"
+#include "ofSoundUtils.hpp"
+#include "ofLog.hpp"
+#include "ofMath.hpp"
 #if !defined(GLM_FORCE_CTOR_INIT)
 	#define GLM_FORCE_CTOR_INIT
 #endif

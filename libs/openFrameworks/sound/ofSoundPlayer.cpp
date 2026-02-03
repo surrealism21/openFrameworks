@@ -1,5 +1,5 @@
-#include "ofSoundPlayer.h"
-#include "ofLog.h"
+#include "ofSoundPlayer.hpp"
+#include "ofLog.hpp"
 #if !defined(GLM_FORCE_CTOR_INIT)
 	#define GLM_FORCE_CTOR_INIT
 #endif
@@ -9,37 +9,37 @@
 #include <glm/ext/scalar_common.hpp>
 
 #ifdef OF_SOUND_PLAYER_AV_ENGINE
-#include "ofAVEngineSoundPlayer.h"
+#include "ofAVEngineSoundPlayer.hpp"
 #define OF_SOUND_PLAYER_TYPE ofAVEngineSoundPlayer
 #endif
 
 #ifdef OF_SOUND_PLAYER_FMOD
-#include "ofFmodSoundPlayer.h"
+#include "ofFmodSoundPlayer.hpp"
 #define OF_SOUND_PLAYER_TYPE ofFmodSoundPlayer
 #endif
 
 #ifdef OF_SOUND_PLAYER_MEDIA_FOUNDATION
-#include "ofMediaFoundationSoundPlayer.h"
+#include "ofMediaFoundationSoundPlayer.hpp"
 #define OF_SOUND_PLAYER_TYPE ofMediaFoundationSoundPlayer
 #endif
 
 #ifdef OF_SOUND_PLAYER_OPENAL
-#include "ofOpenALSoundPlayer.h"
+#include "ofOpenALSoundPlayer.hpp"
 #define OF_SOUND_PLAYER_TYPE ofOpenALSoundPlayer
 #endif
 
 #ifdef TARGET_OF_IOS
-#include "ofxiOSSoundPlayer.h"
+#include "ofxiOSSoundPlayer.hpp"
 #define OF_SOUND_PLAYER_TYPE ofxiOSSoundPlayer
 #endif
 
 #ifdef OF_SOUND_PLAYER_EMSCRIPTEN
-#include "ofxEmscriptenSoundPlayer.h"
+#include "ofxEmscriptenSoundPlayer.hpp"
 #define OF_SOUND_PLAYER_TYPE ofxEmscriptenSoundPlayer
 #endif
 
 #ifdef TARGET_ANDROID
-#include "ofxAndroidSoundPlayer.h"
+#include "ofxAndroidSoundPlayer.hpp"
 #define OF_SOUND_PLAYER_TYPE ofxAndroidSoundPlayer
 #endif
 

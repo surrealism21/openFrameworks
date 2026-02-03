@@ -5,9 +5,9 @@
  *      Author: arturo
  */
 
-#include "ofRendererCollection.h"
-#include "ofGLRenderer.h"
-#include "ofGLProgrammableRenderer.h"
+#include "ofRendererCollection.hpp"
+#include "ofGLRenderer.hpp"
+#include "ofGLProgrammableRenderer.hpp"
 
 const std::string ofRendererCollection::TYPE="collection";
 

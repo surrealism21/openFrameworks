@@ -1,5 +1,5 @@
-#include "ofXml.h"
-#include "ofUtils.h"
+#include "ofXml.hpp"
+#include "ofUtils.hpp"
 #include <clocale>
 
 using std::string;

@@ -6,13 +6,13 @@
 //
 //
 
-#include "of3dPrimitives.h"
-#include "ofGraphics.h"
-#include "ofRectangle.h"
-#include "ofVboMesh.h"
-#include "ofTexture.h"
-#include "of3dUtils.h"
-#include "ofVectorMath.h"
+#include "of3dPrimitives.hpp"
+#include "ofGraphics.hpp"
+#include "ofRectangle.hpp"
+#include "ofVboMesh.hpp"
+#include "ofTexture.hpp"
+#include "of3dUtils.hpp"
+#include "ofVectorMath.hpp"
 
 using std::vector;
 using std::shared_ptr;

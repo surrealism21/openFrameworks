@@ -1,6 +1,6 @@
-#include "ofSerial.h"
-#include "ofUtils.h"
-#include "ofLog.h"
+#include "ofSerial.hpp"
+#include "ofUtils.hpp"
+#include "ofLog.hpp"
 #include <fcntl.h>
 #include <errno.h>
 #include <ctype.h>

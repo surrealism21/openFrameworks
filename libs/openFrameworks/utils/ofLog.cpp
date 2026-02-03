@@ -1,10 +1,10 @@
-#include "ofLog.h"
-#include <ofUtils.h>
+#include "ofLog.hpp"
+#include "ofUtils.hpp"
 #include <map>
 #include <functional> // std::function
 
 #ifdef TARGET_ANDROID
-	#include "ofxAndroidLogChannel.h"
+	#include "ofxAndroidLogChannel.hpp"
 #endif
 
 using std::map;

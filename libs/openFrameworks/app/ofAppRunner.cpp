@@ -1,20 +1,20 @@
-#include "ofAppRunner.h"
+#include "ofAppRunner.hpp"
 
-#include "ofBaseApp.h"
-#include "ofAppBaseWindow.h"
+#include "ofBaseApp.hpp"
+#include "ofAppBaseWindow.hpp"
 
-#include "ofLog.h"
-#include "ofGraphicsBaseTypes.h"
-#include "ofRectangle.h"
-#include "ofMainLoop.h"
-#include "ofEvents.h" // of::priv
-#include "ofUtils.h" // initUtils
+#include "ofLog.hpp"
+#include "ofGraphicsBaseTypes.hpp"
+#include "ofRectangle.hpp"
+#include "ofMainLoop.hpp"
+#include "ofEvents.hpp" // of::priv
+#include "ofUtils.hpp" // initUtils
 
 using std::shared_ptr;
 
 #if !defined(TARGET_NODISPLAY)
 	#if !defined( TARGET_OF_IOS ) & !defined(TARGET_ANDROID) & !defined(TARGET_EMSCRIPTEN) & !defined(TARGET_RASPBERRY_PI_LEGACY)
-	#include "ofAppGLFWWindow.h"
+	#include "ofAppGLFWWindow.hpp"
 	//special case so we preserve supplied settngs
 	//TODO: remove me when we remove the ofAppGLFWWindow setters.
 	//--------------------------------------
@@ -30,12 +30,12 @@ using std::shared_ptr;
 #endif
 
 #ifdef TARGET_LINUX
-#include "ofGstUtils.h"
+#include "ofGstUtils.hpp"
 #endif
 
 // adding this for vc2010 compile: error C3861: 'closeQuicktime': identifier not found
 #if defined(OF_VIDEO_CAPTURE_QUICKTIME) || defined(OF_VIDEO_PLAYER_QUICKTIME)
-	#include "ofQtUtils.h"
+	#include "ofQtUtils.hpp"
 #endif
 
 #if defined (TARGET_WIN32)

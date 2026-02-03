@@ -1,5 +1,5 @@
-#include "ofQuaternion.h"
-#include "ofMatrix4x4.h"
+#include "ofQuaternion.hpp"
+#include "ofMatrix4x4.hpp"
 
 #if !defined(GLM_FORCE_CTOR_INIT)
 	#define GLM_FORCE_CTOR_INIT

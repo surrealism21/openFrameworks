@@ -5,28 +5,28 @@
  *      Author: arturo
  */
 
-#include "ofMainLoop.h"
-#include "ofBaseApp.h"
-// #include "ofConstants.h"
+#include "ofMainLoop.hpp"
+#include "ofBaseApp.hpp"
+// #include "ofConstants.hpp"
 
 //========================================================================
 // default windowing
 #ifdef TARGET_NODISPLAY
-	#include "ofAppNoWindow.h"
+	#include "ofAppNoWindow.hpp"
 #elif defined(TARGET_OF_IOS)
-	#include "ofAppiOSWindow.h"
+	#include "ofAppiOSWindow.hpp"
 #elif defined(TARGET_ANDROID)
-	#include "ofAppAndroidWindow.h"
-	#include "ofxAndroidUtils.h"
-	#include "ofxAndroidApp.h"
+	#include "ofAppAndroidWindow.hpp"
+	#include "ofxAndroidUtils.hpp"
+	#include "ofxAndroidApp.hpp"
 #elif defined(TARGET_RASPBERRY_PI) && defined(TARGET_GLFW_WINDOW)
-	#include "ofAppGLFWWindow.h"
+	#include "ofAppGLFWWindow.hpp"
 #elif defined(TARGET_RASPBERRY_PI)
-	#include "ofAppEGLWindow.h"
+	#include "ofAppEGLWindow.hpp"
 #elif defined(TARGET_EMSCRIPTEN)
-	#include "ofxAppEmscriptenWindow.h"
+	#include "ofxAppEmscriptenWindow.hpp"
 #else
-	#include "ofAppGLFWWindow.h"
+	#include "ofAppGLFWWindow.hpp"
 #endif
 
 ofMainLoop::ofMainLoop()

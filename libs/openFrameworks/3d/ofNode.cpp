@@ -1,6 +1,6 @@
 
-#include "ofNode.h"
-#include "of3dGraphics.h"
+#include "ofNode.hpp"
+#include "of3dGraphics.hpp"
 
 #if !defined(GLM_FORCE_CTOR_INIT)
 	#define GLM_FORCE_CTOR_INIT
@@ -9,7 +9,7 @@
 	#define GLM_ENABLE_EXPERIMENTAL
 #endif
 #include <glm/mat4x4.hpp>
-#include "ofVectorMath.h"
+#include "ofVectorMath.hpp"
 
 //----------------------------------------
 ofNode::ofNode()

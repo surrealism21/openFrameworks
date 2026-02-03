@@ -5,10 +5,10 @@
  *      Author: arturo
  */
 
-#include "ofMatrixStack.h"
-#include "ofAppBaseWindow.h"
-#include "ofGraphicsBaseTypes.h"
-#include "ofLog.h"
+#include "ofMatrixStack.hpp"
+#include "ofAppBaseWindow.hpp"
+#include "ofGraphicsBaseTypes.hpp"
+#include "ofLog.hpp"
 
 #if !defined(GLM_FORCE_CTOR_INIT)
 	#define GLM_FORCE_CTOR_INIT

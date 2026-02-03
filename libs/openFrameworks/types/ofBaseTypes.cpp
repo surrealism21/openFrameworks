@@ -1,8 +1,8 @@
-#include "ofBaseTypes.h"
-#include "ofGLProgrammableRenderer.h"
-#include "of3dGraphics.h"
-#include "ofSoundBuffer.h"
-#include "ofMesh.h"
+#include "ofBaseTypes.hpp"
+#include "ofGLProgrammableRenderer.hpp"
+#include "of3dGraphics.hpp"
+#include "ofSoundBuffer.hpp"
+#include "ofMesh.hpp"
 
 //---------------------------------------------------------------------------
 ofBaseVideoGrabber::~ofBaseVideoGrabber(){

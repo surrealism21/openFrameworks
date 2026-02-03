@@ -1,10 +1,10 @@
 
-#include "ofSystemUtils.h"
-#include "ofFileUtils.h"
-#include "ofLog.h"
-#include "ofUtils.h"
+#include "ofSystemUtils.hpp"
+#include "ofFileUtils.hpp"
+#include "ofLog.hpp"
+#include "ofUtils.hpp"
 // FIXME: ofConstants Targets
-#include "ofConstants.h"
+#include "ofConstants.hpp"
 
 #include <condition_variable>
 #include <mutex>
@@ -19,7 +19,7 @@
 #ifdef __OBJC__
 	#include <Cocoa/Cocoa.h>
 #endif
-	#include "ofAppRunner.h"
+	#include "ofAppRunner.hpp"
 #endif
 
 #ifdef TARGET_WIN32
@@ -79,7 +79,7 @@ static void restoreAppWindowFocus(){
 
 #if defined( TARGET_LINUX ) && defined (OF_USING_GTK)
 #include <gtk/gtk.h>
-#include "ofGstUtils.h"
+#include "ofGstUtils.hpp"
 #include <thread>
 #include <X11/Xlib.h>
 
@@ -247,7 +247,7 @@ void resetLocale(std::locale locale){
 #endif
 
 #ifdef TARGET_ANDROID
-#include "ofxAndroidUtils.h"
+#include "ofxAndroidUtils.hpp"
 #endif
 
 #ifdef TARGET_EMSCRIPTEN

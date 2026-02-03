@@ -1,6 +1,6 @@
-#include "ofSoundStream.h"
-#include "ofAppRunner.h"
-#include "ofLog.h"
+#include "ofSoundStream.hpp"
+#include "ofAppRunner.hpp"
+#include "ofLog.hpp"
 
 //------------------------------------------------ soundstream
 // check if any soundstream api is defined from the compiler
@@ -17,21 +17,21 @@
 #endif
 
 #if defined(OF_SOUND_PLAYER_FMOD)
-#include "ofSoundPlayer.h"
-#include "ofFmodSoundPlayer.h"
+#include "ofSoundPlayer.hpp"
+#include "ofFmodSoundPlayer.hpp"
 #endif
 
 #ifdef OF_SOUNDSTREAM_RTAUDIO
-#include "ofRtAudioSoundStream.h"
+#include "ofRtAudioSoundStream.hpp"
 #define OF_SOUND_STREAM_TYPE ofRtAudioSoundStream
 #elif defined(OF_SOUNDSTREAM_ANDROID)
-#include "ofxAndroidSoundStream.h"
+#include "ofxAndroidSoundStream.hpp"
 #define OF_SOUND_STREAM_TYPE ofxAndroidSoundStream
 #elif defined(OF_SOUNDSTREAM_IOS)
-#include "ofxiOSSoundStream.h"
+#include "ofxiOSSoundStream.hpp"
 #define OF_SOUND_STREAM_TYPE ofxiOSSoundStream
 #elif defined(OF_SOUNDSTREAM_EMSCRIPTEN)
-#include "ofxEmscriptenSoundStream.h"
+#include "ofxEmscriptenSoundStream.hpp"
 #define OF_SOUND_STREAM_TYPE ofxEmscriptenSoundStream
 #endif
 

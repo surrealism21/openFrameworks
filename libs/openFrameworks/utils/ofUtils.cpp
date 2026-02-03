@@ -1,15 +1,15 @@
-#include "ofUtils.h"
+#include "ofUtils.hpp"
 // FIXME: split ofUtils in two files, one which uses urlparser / ofImage, other without for smaller apps.
-#include "ofAppBaseWindow.h"
-#include "ofAppRunner.h"
-#include "ofEvents.h"
-#include "ofGLUtils.h"
-#include "ofImage.h"
-#include "ofLog.h"
-#include "ofMainLoop.h"
-#include "ofPixels.h"
+#include "ofAppBaseWindow.hpp"
+#include "ofAppRunner.hpp"
+#include "ofEvents.hpp"
+#include "ofGLUtils.hpp"
+#include "ofImage.hpp"
+#include "ofLog.hpp"
+#include "ofMainLoop.hpp"
+#include "ofPixels.hpp"
 
-#include "uriparser/Uri.h"
+#include <uriparser/Uri.h>
 #include <chrono>
 #include <locale>
 #include <numeric>
@@ -45,11 +45,11 @@
 #endif
 
 #ifdef TARGET_OF_IOS
-//	#include "ofxiOSExtras.h"
+//	#include "ofxiOSExtras.hpp"
 #endif
 
 #ifdef TARGET_ANDROID
-	#include "ofxAndroidUtils.h"
+	#include "ofxAndroidUtils.hpp"
 #endif
 
 #ifndef MAXPATHLEN

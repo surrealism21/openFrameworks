@@ -1,7 +1,7 @@
-#include "ofAppBaseWindow.h"
-#include "ofAppRunner.h"
-#include "ofEvents.h"
-#include "ofLog.h"
+#include "ofAppBaseWindow.hpp"
+#include "ofAppRunner.hpp"
+#include "ofEvents.hpp"
+#include "ofLog.hpp"
 
 static ofEventArgs voidEventArgs;
 
@@ -302,7 +302,7 @@ bool ofCoreEvents::notifySetup() {
 	return ofNotifyEvent(setup, voidEventArgs);
 }
 
-#include "ofGraphics.h"
+#include "ofGraphics.hpp"
 //------------------------------------------
 bool ofCoreEvents::notifyUpdate() {
 	return ofNotifyEvent(update, voidEventArgs);

@@ -1,15 +1,15 @@
-#include "ofTexture.h"
-#include "ofGraphics.h"
-#include "ofPixels.h"
-#include "ofGLUtils.h"
-#include "ofGLBaseTypes.h"
-#include "ofBufferObject.h"
-#include "ofMesh.h"
-#include "ofRectangle.h"
+#include "ofTexture.hpp"
+#include "ofGraphics.hpp"
+#include "ofPixels.hpp"
+#include "ofGLUtils.hpp"
+#include "ofGLBaseTypes.hpp"
+#include "ofBufferObject.hpp"
+#include "ofMesh.hpp"
+#include "ofRectangle.hpp"
 #include <unordered_map>
 
 #ifdef TARGET_ANDROID
-#include "ofAppAndroidWindow.h"
+#include "ofAppAndroidWindow.hpp"
 #endif
 
 //----------------------------------------------------------

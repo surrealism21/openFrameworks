@@ -1,8 +1,8 @@
-#include "ofAppRunner.h"
-#include "ofURLFileLoader.h"
-#include "ofUtils.h"
-#include "ofFileUtils.h"
-#include "ofLog.h"
+#include "ofAppRunner.hpp"
+#include "ofURLFileLoader.hpp"
+#include "ofUtils.hpp"
+#include "ofFileUtils.hpp"
+#include "ofLog.hpp"
 
 using std::map;
 using std::set;
@@ -10,8 +10,8 @@ using std::string;
 
 #if !defined(TARGET_IMPLEMENTS_URL_LOADER)
 	#include <curl/curl.h>
-	#include "ofThreadChannel.h"
-	#include "ofThread.h"
+	#include "ofThreadChannel.hpp"
+	#include "ofThread.hpp"
 	static bool curlInited = false;
 
 	#define MAX_POSTFIELDS_SIZE (1024 * 1024)
@@ -462,13 +462,13 @@ ofURLFileLoader::ofURLFileLoader()
 #endif
 
 #ifdef TARGET_EMSCRIPTEN
-	#include "ofxEmscriptenURLFileLoader.h"
+	#include "ofxEmscriptenURLFileLoader.hpp"
 ofURLFileLoader::ofURLFileLoader()
 	: impl(new ofxEmscriptenURLFileLoader) { }
 #endif
 
 #ifdef TARGET_OF_TVOS
-#include "ofxtvOSURLFileLoader.h"
+#include "ofxtvOSURLFileLoader.hpp"
 ofURLFileLoader::ofURLFileLoader()
 : impl(new ofxtvOSURLFileLoader) { }
 #endif

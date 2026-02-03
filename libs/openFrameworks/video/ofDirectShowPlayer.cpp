@@ -1,5 +1,5 @@
-#include "ofDirectShowPlayer.h"
-#include "ofPixels.h" // MARK: pixels, srcBuffer
+#include "ofDirectShowPlayer.hpp"
+#include "ofPixels.hpp" // MARK: pixels, srcBuffer
 
 #ifdef _MSC_VER
 #pragma comment(lib,"Strmiids.lib")
@@ -13,7 +13,7 @@
 
 #include <dshow.h>
 #ifdef _MSC_VER
-#pragma include_alias( "dxtrans.h", "qedit.h" )
+#pragma include_alias( "dxtrans.hpp", "qedit.hpp" )
 #endif
 #define __IDxtCompositor_INTERFACE_DEFINED__
 #define __IDxtAlphaSetter_INTERFACE_DEFINED__

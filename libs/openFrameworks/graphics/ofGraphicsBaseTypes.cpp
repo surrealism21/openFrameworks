@@ -1,5 +1,5 @@
-#include "ofGraphicsBaseTypes.h"
-#include "ofRectangle.h"
+#include "ofGraphicsBaseTypes.hpp"
+#include "ofRectangle.hpp"
 
 #if !defined(GLM_FORCE_CTOR_INIT)
 	#define GLM_FORCE_CTOR_INIT

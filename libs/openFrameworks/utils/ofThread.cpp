@@ -1,10 +1,10 @@
-#include "ofThread.h"
-#include "ofLog.h"
+#include "ofThread.hpp"
+#include "ofLog.hpp"
 #include <functional>
 
 #ifdef TARGET_ANDROID
 #include <jni.h>
-#include "ofxAndroidUtils.h"
+#include "ofxAndroidUtils.hpp"
 #endif
 
 //-------------------------------------------------

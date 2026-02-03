@@ -1,14 +1,14 @@
 #ifndef OF_POLYLINE_H
-#include "ofPolyline.h"
+#include "ofPolyline.hpp"
 #endif
 
-#include "ofRectangle.h"
-#include "ofGraphicsBaseTypes.h"
-#include "ofAppRunner.h"
-#include "ofLog.h"
-#include "ofMath.h"
+#include "ofRectangle.hpp"
+#include "ofGraphicsBaseTypes.hpp"
+#include "ofAppRunner.hpp"
+#include "ofLog.hpp"
+#include "ofMath.hpp"
 
-#include <ofVectorMath.h> // toGlm
+#include "ofVectorMath.hpp" // toGlm
 //#include <glm/gtx/vector_angle.hpp>
 
 //----------------------------------------------------------

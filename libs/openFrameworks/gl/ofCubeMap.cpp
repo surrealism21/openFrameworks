@@ -1,18 +1,18 @@
-#include "ofShader.h"
-#include "ofCubeMap.h"
-#include "ofImage.h"
-#include "of3dUtils.h"
-#include "ofGLBaseTypes.h"
-#include "ofGLUtils.h"
-#include "ofGLProgrammableRenderer.h"
-#include "ofCubeMapShaders.h"
-#include "ofFbo.h"
-#include "ofTexture.h"
-#include "ofFileUtils.h"
-#include "ofMaterial.h"
+#include "ofShader.hpp"
+#include "ofCubeMap.hpp"
+#include "ofImage.hpp"
+#include "of3dUtils.hpp"
+#include "ofGLBaseTypes.hpp"
+#include "ofGLUtils.hpp"
+#include "ofGLProgrammableRenderer.hpp"
+#include "ofCubeMapShaders.hpp"
+#include "ofFbo.hpp"
+#include "ofTexture.hpp"
+#include "ofFileUtils.hpp"
+#include "ofMaterial.hpp"
 
 #ifdef TARGET_ANDROID
-#include "ofAppAndroidWindow.h"
+#include "ofAppAndroidWindow.hpp"
 #endif
 
 #if !defined(GLM_FORCE_CTOR_INIT)
@@ -303,7 +303,7 @@ bool ofCubeMap::load( ofCubeMapSettings aSettings ) {
 //	}
 	
 	if( aSettings.filePath.empty() ) {
-		ofLogError("ofCubeMap :: load : must set file path");
+		ofLogError("ofCubeMap :: load : must set file pathpp");
 		return false;
 	}
 	

@@ -1,14 +1,14 @@
 #ifndef OF_MESH_H
-#include "ofMesh.h"
+#include "ofMesh.hpp"
 #endif
 
-#include "ofAppRunner.h"
-#include "ofGraphicsBaseTypes.h"
+#include "ofAppRunner.hpp"
+#include "ofGraphicsBaseTypes.hpp"
 // it can be removed if other PR is merged #8178
-#include "ofVectorMath.h"
-#include "ofLog.h"
-#include "ofColor.h"
-#include "ofUtils.h" // ofTo
+#include "ofVectorMath.hpp"
+#include "ofLog.hpp"
+#include "ofColor.hpp"
+#include "ofUtils.hpp" // ofTo
 
 //#include <glm/gtx/vector_angle.hpp>
 
@@ -355,7 +355,7 @@ void ofMesh_<V,N,C,T>::addTriangle(ofIndexType index1, ofIndexType index2, ofInd
 template<class V, class N, class C, class T>
 void ofMesh_<V,N,C,T>::removeVertex(ofIndexType index){
   if(index >= vertices.size()){
-	ofLogError("ofMesh") << "removeVertex(): ignoring out of range index " << index << ", number of vertices is" << vertices.size();
+	ofLogError("ofMeshpp") << "removeVertex(): ignoring out of range index " << index << ", number of vertices is" << vertices.size();
   }else{
 	vertices.erase(vertices.begin() + index);
 	bVertsChanged = true;
@@ -366,7 +366,7 @@ void ofMesh_<V,N,C,T>::removeVertex(ofIndexType index){
 template<class V, class N, class C, class T>
 void ofMesh_<V,N,C,T>::removeVertices(ofIndexType startIndex, ofIndexType endIndex){
 	if(startIndex >= vertices.size() || endIndex > vertices.size()){
-		ofLogError("ofMesh") << "removeVertex(): ignoring out of range startIndex " << startIndex << " endIndex " << endIndex << ", number of vertices is" << vertices.size();
+		ofLogError("ofMeshpp") << "removeVertex(): ignoring out of range startIndex " << startIndex << " endIndex " << endIndex << ", number of vertices is" << vertices.size();
 	}else{
 		vertices.erase(vertices.begin() + startIndex, vertices.begin() + endIndex);
 		bVertsChanged = true;
@@ -380,7 +380,7 @@ void ofMesh_<V,N,C,T>::removeVertices(ofIndexType startIndex, ofIndexType endInd
 template<class V, class N, class C, class T>
 void ofMesh_<V,N,C,T>::removeNormal(ofIndexType index){
   if(index >= normals.size()){
-	ofLogError("ofMesh") << "removeNormal(): ignoring out of range index " << index << ", number of normals is" << normals.size();
+	ofLogError("ofMeshpp") << "removeNormal(): ignoring out of range index " << index << ", number of normals is" << normals.size();
   }else{
 	normals.erase(normals.begin() + index);
 	bNormalsChanged = true;
@@ -391,7 +391,7 @@ void ofMesh_<V,N,C,T>::removeNormal(ofIndexType index){
 template<class V, class N, class C, class T>
 void ofMesh_<V,N,C,T>::removeNormals(ofIndexType startIndex, ofIndexType endIndex){
     if(startIndex >= normals.size() || endIndex > normals.size()){
-        ofLogError("ofMesh") << "removeNormal(): ignoring out of range beginIndex " << startIndex << " endIndex " << endIndex << ", number of normals is" << normals.size();
+        ofLogError("ofMeshpp") << "removeNormal(): ignoring out of range beginIndex " << startIndex << " endIndex " << endIndex << ", number of normals is" << normals.size();
     }else{
         normals.erase(normals.begin() + startIndex, normals.begin() + endIndex);
         bNormalsChanged = true;
@@ -404,7 +404,7 @@ void ofMesh_<V,N,C,T>::removeNormals(ofIndexType startIndex, ofIndexType endInde
 template<class V, class N, class C, class T>
 void ofMesh_<V,N,C,T>::removeColor(ofIndexType index){
   if(index >= colors.size()){
-	ofLogError("ofMesh") << "removeColor(): ignoring out of range index " << index << ", number of colors is" << colors.size();
+	ofLogError("ofMeshpp") << "removeColor(): ignoring out of range index " << index << ", number of colors is" << colors.size();
   }else{
 	colors.erase(colors.begin() + index);
 	bColorsChanged = true;
@@ -415,7 +415,7 @@ void ofMesh_<V,N,C,T>::removeColor(ofIndexType index){
 template<class V, class N, class C, class T>
 void ofMesh_<V,N,C,T>::removeColors(ofIndexType startIndex, ofIndexType endIndex){
 	if(startIndex >= colors.size() || endIndex > colors.size()){
-		ofLogError("ofMesh") << "removeColor(): ignoring out of range startIndex " << startIndex << " endIndex " << endIndex << ", number of colors is" << colors.size();
+		ofLogError("ofMeshpp") << "removeColor(): ignoring out of range startIndex " << startIndex << " endIndex " << endIndex << ", number of colors is" << colors.size();
 	}else{
 		colors.erase(colors.begin() + startIndex, colors.begin() + endIndex);
 		bColorsChanged = true;
@@ -429,7 +429,7 @@ void ofMesh_<V,N,C,T>::removeColors(ofIndexType startIndex, ofIndexType endIndex
 template<class V, class N, class C, class T>
 void ofMesh_<V,N,C,T>::removeTexCoord(ofIndexType index){
   if(index >= texCoords.size()){
-	ofLogError("ofMesh") << "removeTexCoord(): ignoring out of range index " << index << ", number of tex coords is" << texCoords.size();
+	ofLogError("ofMeshpp") << "removeTexCoord(): ignoring out of range index " << index << ", number of tex coords is" << texCoords.size();
   }else{
 	texCoords.erase(texCoords.begin() + index);
 	bTexCoordsChanged = true;
@@ -440,7 +440,7 @@ void ofMesh_<V,N,C,T>::removeTexCoord(ofIndexType index){
 template<class V, class N, class C, class T>
 void ofMesh_<V,N,C,T>::removeTexCoords(ofIndexType startIndex, ofIndexType endIndex){
 	if(startIndex >= texCoords.size() || endIndex >= texCoords.size()){
-		ofLogError("ofMesh") << "removeTexCoord(): ignoring out of range startIndex " << startIndex << " endIndex " << endIndex << ", number of tex coords is" << texCoords.size();
+		ofLogError("ofMeshpp") << "removeTexCoord(): ignoring out of range startIndex " << startIndex << " endIndex " << endIndex << ", number of tex coords is" << texCoords.size();
 	}else{
 		texCoords.erase(texCoords.begin() + startIndex, texCoords.begin() + endIndex);
 		bTexCoordsChanged = true;
@@ -455,7 +455,7 @@ void ofMesh_<V,N,C,T>::removeTexCoords(ofIndexType startIndex, ofIndexType endIn
 template<class V, class N, class C, class T>
 void ofMesh_<V,N,C,T>::removeIndex(ofIndexType index){
   if(index >= indices.size()){
-	ofLogError("ofMesh") << "removeIndex(): ignoring out of range index " << index << ", number of indices is" << indices.size();
+	ofLogError("ofMeshpp") << "removeIndex(): ignoring out of range index " << index << ", number of indices is" << indices.size();
   }else{
 	indices.erase(indices.begin() + index);
 	bIndicesChanged = true;
@@ -466,7 +466,7 @@ void ofMesh_<V,N,C,T>::removeIndex(ofIndexType index){
 template<class V, class N, class C, class T>
 void ofMesh_<V,N,C,T>::removeIndices(ofIndexType startIndex, ofIndexType endIndex){
 	if(startIndex >= indices.size() || endIndex > indices.size()){
-		ofLogError("ofMesh") << "removeIndex(): ignoring out of range startIndex " << startIndex << " endIndex " << endIndex << ", number of indices is" << indices.size();;
+		ofLogError("ofMeshpp") << "removeIndex(): ignoring out of range startIndex " << startIndex << " endIndex " << endIndex << ", number of indices is" << indices.size();;
 	}else{
 		indices.erase(indices.begin() + startIndex, indices.begin() + endIndex);
 		bIndicesChanged = true;
@@ -785,7 +785,7 @@ std::vector<int>& ofPrimitive::getFace(int faceNum){
 template<class V, class N, class C, class T>
 V ofMesh_<V,N,C,T>::getCentroid() const {
 	if(vertices.size() == 0) {
-		ofLogWarning("ofMesh") << "getCentroid(): mesh has no vertices, returning glm::vec3(0, 0, 0)";
+		ofLogWarning("ofMeshpp") << "getCentroid(): mesh has no vertices, returning glm::vec3(0, 0, 0)";
 		return glm::vec3(0, 0, 0);
 	}
 
@@ -1221,7 +1221,7 @@ void ofMesh_<V,N,C,T>::load(const of::filesystem::path& path){
 				goto clean;
 			}
 			if(!data.hasVertices()){
-				ofLogWarning("ofMesh") << "load(): mesh loaded from " << path << " has no vertices";
+				ofLogWarning("ofMeshpp") << "load(): mesh loaded from " << path << " has no vertices";
 			}
 			if(orderVertices==-1) orderVertices=9999;
 			if(orderIndices==-1) orderIndices=9999;
@@ -1323,8 +1323,8 @@ void ofMesh_<V,N,C,T>::load(const of::filesystem::path& path){
 
 	return;
 	clean:
-	ofLogError("ofMesh") << "load(): " << lineNum << ":" << error;
-	ofLogError("ofMesh") << "load(): \"" << *line << "\"";
+	ofLogError("ofMeshpp") << "load(): " << lineNum << ":" << error;
+	ofLogError("ofMeshpp") << "load(): \"" << *line << "\"";
 	data = backup;
 }
 
@@ -1598,7 +1598,7 @@ void ofMesh_<V,N,C,T>::mergeDuplicateVertices() {
 			ptCreated[index] = true;
 		}
 
-		//ofLogNotice("ofMesh") << "[" << i << "]: old " << index << " --> " << oldIndexNewIndex[index];
+		//ofLogNotice("ofMeshpp") << "[" << i << "]: old " << index << " --> " << oldIndexNewIndex[index];
 		newIndexes.push_back( oldIndexNewIndex[index] );
 	}
 
@@ -1676,7 +1676,7 @@ const std::vector<ofMeshFace_<V,N,C,T>> & ofMesh_<V,N,C,T>::getUniqueFaces() con
 			}
 
 		} else {
-			ofLogWarning("ofMesh") << "getUniqueFaces(): only works with primitive mode OF_PRIMITIVE_TRIANGLES";
+			ofLogWarning("ofMeshpp") << "getUniqueFaces(): only works with primitive mode OF_PRIMITIVE_TRIANGLES";
 		}
 
 		bFacesDirty = false;
@@ -1726,7 +1726,7 @@ std::vector<N> ofMesh_<V,N,C,T>::getFaceNormals( bool perVertex ) const{
 template<class V, class N, class C, class T>
 void ofMesh_<V,N,C,T>::setFromTriangles( const std::vector<ofMeshFace_<V,N,C,T>>& tris, bool bUseFaceNormal ) {
 	if(tris.empty()) {
-		ofLogWarning("ofMesh") << "setFromTriangles(): ignoring empty tris vector";
+		ofLogWarning("ofMeshpp") << "setFromTriangles(): ignoring empty tris vector";
 		return;
 	}
 
@@ -1815,7 +1815,7 @@ void ofMesh_<V,N,C,T>::smoothNormals( float angle ) {
 		// string of vertex in 3d space to triangle index //
 		std::unordered_map<std::string, std::vector<int> > vertHash;
 
-		//ofLogNotice("ofMesh") << "smoothNormals(): num verts = " << verts.size() << " tris size = " << triangles.size();
+		//ofLogNotice("ofMeshpp") << "smoothNormals(): num verts = " << verts.size() << " tris size = " << triangles.size();
 
 
 		for(ofIndexType i = 0; i < verts.size(); i++ ) {
@@ -1842,7 +1842,7 @@ void ofMesh_<V,N,C,T>::smoothNormals( float angle ) {
 
 //		for( std::unordered_map<std::string, std::vector<int> >::iterator it = vertHash.begin(); it != vertHash.end(); ++it) {
 //			//for( std::unordered_map<std::string, int >::iterator it = vertHash.begin(); it != vertHash.end(); ++it) {
-//			ofLogNotice("ofMesh") << "smoothNormals(): " << it->first << "  num = " << it->second.size();
+//			ofLogNotice("ofMeshpp") << "smoothNormals(): " << it->first << "  num = " << it->second.size();
 //		}
 
 		V vert;
@@ -1878,7 +1878,7 @@ void ofMesh_<V,N,C,T>::smoothNormals( float angle ) {
 			}
 		}
 
-		//ofLogNotice("ofMesh") << "smoothNormals(): setting from triangles ";
+		//ofLogNotice("ofMeshpp") << "smoothNormals(): setting from triangles ";
 		setFromTriangles( triangles );
 
 	}
@@ -1938,7 +1938,7 @@ ofMesh_<V,N,C,T> ofMesh_<V,N,C,T>::plane(float width, float height, int columns,
 	ofMesh_<V,N,C,T> mesh;
 
 	if(mode != OF_PRIMITIVE_TRIANGLE_STRIP && mode != OF_PRIMITIVE_TRIANGLES) {
-		ofLogWarning("ofMesh") << "ofGetPlaneMesh(): primtive mode " << mode << " not supported, setting to OF_PRIMITIVE_TRIANGLES";
+		ofLogWarning("ofMeshpp") << "ofGetPlaneMesh(): primtive mode " << mode << " not supported, setting to OF_PRIMITIVE_TRIANGLES";
 		mode = OF_PRIMITIVE_TRIANGLES;
 	}
 

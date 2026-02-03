@@ -1,6 +1,6 @@
-#include "ofCamera.h"
-#include "ofGraphics.h"
-#include "of3dGraphics.h"
+#include "ofCamera.hpp"
+#include "ofGraphics.hpp"
+#include "of3dGraphics.hpp"
 
 #define GLM_FORCE_CTOR_INIT
 #define GLM_ENABLE_EXPERIMENTAL

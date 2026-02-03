@@ -1,4 +1,4 @@
-#include "ofMatrix4x4.h"
+#include "ofMatrix4x4.hpp"
 
 #include <limits>
 #include <stdlib.h>

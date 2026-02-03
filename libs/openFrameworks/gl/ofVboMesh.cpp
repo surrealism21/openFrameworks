@@ -1,8 +1,8 @@
-#include "ofVboMesh.h"
-#include "ofGLBaseTypes.h"
+#include "ofVboMesh.hpp"
+#include "ofGLBaseTypes.hpp"
 
 #ifdef TARGET_ANDROID
-#include "ofxAndroidUtils.h"
+#include "ofxAndroidUtils.hpp"
 #endif
 
 ofVboMesh::ofVboMesh(){

@@ -1,6 +1,6 @@
-#include "ofEasyCam.h"
-#include "ofUtils.h"
-#include "ofGraphicsBaseTypes.h"
+#include "ofEasyCam.hpp"
+#include "ofUtils.hpp"
+#include "ofGraphicsBaseTypes.hpp"
 
 #if !defined(GLM_FORCE_CTOR_INIT)
 	#define GLM_FORCE_CTOR_INIT

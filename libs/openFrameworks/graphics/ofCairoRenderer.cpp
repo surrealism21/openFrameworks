@@ -1,14 +1,14 @@
-#include "ofConstants.h"
+#include "ofConstants.hpp"
 #if defined(OF_CAIRO)
 #include <cairo/cairo-features.h>
 #include <cairo/cairo-pdf.h>
 #include <cairo/cairo-svg.h>
-#include "ofCairoRenderer.h"
-#include "ofGraphics.h"
-#include "ofImage.h"
-#include "ofMesh.h"
-#include "ofTrueTypeFont.h"
-#include "ofVideoBaseTypes.h"
+#include "ofCairoRenderer.hpp"
+#include "ofGraphics.hpp"
+#include "ofImage.hpp"
+#include "ofMesh.hpp"
+#include "ofTrueTypeFont.hpp"
+#include "ofVideoBaseTypes.hpp"
 
 using std::string;
 using std::vector;

@@ -1,7 +1,7 @@
-#include "ofGraphicsCairo.h"
+#include "ofGraphicsCairo.hpp"
 #if defined(OF_CAIRO)
-#include "ofRendererCollection.h"
-#include "ofCairoRenderer.h"
+#include "ofRendererCollection.hpp"
+#include "ofCairoRenderer.hpp"
 
 static std::shared_ptr<ofCairoRenderer> cairoScreenshot;
 static std::shared_ptr<ofBaseRenderer> storedRenderer;

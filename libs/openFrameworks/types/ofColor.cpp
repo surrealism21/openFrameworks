@@ -1,4 +1,4 @@
-#include "ofColor.h"
+#include "ofColor.hpp"
 #include <limits>
 
 

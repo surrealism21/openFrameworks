@@ -5,14 +5,14 @@
 //  Created by Theo Watson on 3/24/21.
 //  Modified by Dan Rosser 9/5/22
 
-#include "ofAVEngineSoundPlayer.h"
+#include "ofAVEngineSoundPlayer.hpp"
 
 #ifdef OF_SOUND_PLAYER_AV_ENGINE
 
-#include "ofUtils.h"
-#include "ofMath.h"
-#include "ofLog.h"
-#include "ofEvents.h"
+#include "ofUtils.hpp"
+#include "ofMath.hpp"
+#include "ofLog.hpp"
+#include "ofEvents.hpp"
 
 //#ifdef __OBJC__
 //	#import <Foundation/Foundation.h>

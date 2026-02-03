@@ -6,7 +6,7 @@
 //
 //
 
-#include "of3dGraphics.h"
+#include "of3dGraphics.hpp"
 
 
 enum of3dPrimitiveType {

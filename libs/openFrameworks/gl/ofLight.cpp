@@ -8,12 +8,12 @@
  */
 
 
-#include "ofLight.h"
-#include "ofColor.h"
-#include "of3dUtils.h"
-#include "ofGLBaseTypes.h"
-#include "ofGLUtils.h"
-#include "ofColor.h"
+#include "ofLight.hpp"
+#include "ofColor.hpp"
+#include "of3dUtils.hpp"
+#include "ofGLBaseTypes.hpp"
+#include "ofGLUtils.hpp"
+#include "ofColor.hpp"
 
 #if !defined(GLM_FORCE_CTOR_INIT)
 	#define GLM_FORCE_CTOR_INIT

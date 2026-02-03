@@ -5,12 +5,12 @@
  *      Author: arturo
  */
 
-#include "ofGstVideoPlayer.h"
+#include "ofGstVideoPlayer.hpp"
 #include <gst/gst.h>
 #include <gst/video/video.h>
 #include <gst/app/gstappsink.h>
-#include "ofConstants.h"
-#include "ofGstUtils.h"
+#include "ofConstants.hpp"
+#include "ofGstUtils.hpp"
 
 ofGstVideoPlayer::ofGstVideoPlayer(){
 	nFrames						= 0;

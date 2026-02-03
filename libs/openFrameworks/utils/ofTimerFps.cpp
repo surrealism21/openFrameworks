@@ -1,4 +1,4 @@
-#include "ofTimerFps.h"
+#include "ofTimerFps.hpp"
 #include <thread>
 
 using namespace std::chrono;

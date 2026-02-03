@@ -1,6 +1,6 @@
-#include "ofGraphicsConstants.h"
-#include "ofPixels.h"
-#include "ofColor.h"
+#include "ofGraphicsConstants.hpp"
+#include "ofPixels.hpp"
+#include "ofColor.hpp"
 #include <string.h> // memcpy
 #include <functional> // std::function
 

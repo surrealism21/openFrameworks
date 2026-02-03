@@ -1,18 +1,18 @@
-#include "of3dPrimitives.h"
-#include "ofBitmapFont.h"
-#include "ofCamera.h"
-#include "ofFbo.h"
-#include "ofGLProgrammableRenderer.h"
-#include "ofGLUtils.h"
-#include "ofImage.h"
-#include "ofLight.h"
-#include "ofMaterialBaseTypes.h"
-#include "ofMesh.h"
-#include "ofNode.h"
-#include "ofPath.h"
-#include "ofTrueTypeFont.h"
-#include "ofVboMesh.h"
-#include "ofVideoBaseTypes.h"
+#include "of3dPrimitives.hpp"
+#include "ofBitmapFont.hpp"
+#include "ofCamera.hpp"
+#include "ofFbo.hpp"
+#include "ofGLProgrammableRenderer.hpp"
+#include "ofGLUtils.hpp"
+#include "ofImage.hpp"
+#include "ofLight.hpp"
+#include "ofMaterialBaseTypes.hpp"
+#include "ofMesh.hpp"
+#include "ofNode.hpp"
+#include "ofPath.hpp"
+#include "ofTrueTypeFont.hpp"
+#include "ofVboMesh.hpp"
+#include "ofVideoBaseTypes.hpp"
 
 using std::string;
 using std::swap;
@@ -1477,7 +1477,7 @@ void ofGLProgrammableRenderer::setAttributes(bool vertices, bool color, bool tex
 			auto viewRect = getCurrentViewport();
 			glm::vec4 viewRect4(viewRect.x, viewRect.y, viewRect.getWidth(), viewRect.getHeight() );
 			currentShader->setUniform4f("viewRect", viewRect4);
-			currentShader->setUniform1f("uLineWidth", currentStyle.lineWidth);
+			currentShader->setUniform1f("uLineWidthpp", currentStyle.lineWidth);
 			currentShader->setUniform1f("uUsePerspective", mBLineSizeAttenutation ? 1.0f : 0.0f);
 		}
 	}
@@ -3454,11 +3454,11 @@ void ofGLProgrammableRenderer::setVideoShaderUniforms(const ofBaseVideoDraws & v
 #ifndef TARGET_OPENGLES
 		if (video.getTexture().getTextureData().textureTarget == GL_TEXTURE_RECTANGLE) {
 			shader.setUniform1f("onePixel", 1.0);
-			shader.setUniform1f("textureWidth", 1.0);
+			shader.setUniform1f("textureWidthpp", 1.0);
 		} else {
 #endif
 			shader.setUniform1f("onePixel", 1.0 / video.getWidth());
-			shader.setUniform1f("textureWidth", video.getWidth());
+			shader.setUniform1f("textureWidthpp", video.getWidth());
 #ifndef TARGET_OPENGLES
 		}
 #endif
