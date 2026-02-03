@@ -11,15 +11,15 @@ ofFpsCounter::ofFpsCounter()
 		timestamps.resize(targetFPS + 7);
 	}
 
-ofFpsCounter::ofFpsCounter(double targetFPS, int mode)
-	: targetFPS(targetFPS)
-	, lastFrameTime(std::chrono::duration<long long, std::nano>(0))
-	, diff(std::chrono::duration<long long, std::nano>(0))
-	, then(std::chrono::steady_clock::now())
-	, timeMode(mode) {
-		timestamps.clear();
-		timestamps.resize(targetFPS + 7);
-	}
+ofFpsCounter::ofFpsCounter(double targetFPS, int mode) {
+	this->targetFPS = targetFPS;
+	lastFrameTime = std::chrono::duration<long long, std::nano>(0);
+	diff = std::chrono::duration<long long, std::nano>(0);
+	then = std::chrono::steady_clock::now();
+	timeMode = mode;
+	timestamps.clear();
+	timestamps.resize(targetFPS + 7);
+}
 
 void ofFpsCounter::newFrame(){
 	now = steady_clock::now();
