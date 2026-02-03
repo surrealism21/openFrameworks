@@ -641,7 +641,7 @@ protected:
 		}
 	};
 
-
+	// TODO: make these not precompiled. Thanks!
 	template<class TObj, typename TMethod>
 	std::unique_ptr<FunctionId<TObj,TMethod>> make_function_id(TObj * listener, TMethod method){
 		return std::unique_ptr<FunctionId<TObj,TMethod>>(new FunctionId<TObj,TMethod>(listener,method));
@@ -675,10 +675,12 @@ protected:
 
 	template<typename F>
 	std::unique_ptr<of::priv::BaseFunctionId> make_std_function_id(const F & f){
-		auto function = f.template target<typename of::priv::callable_traits<F>::function_ptr>();
-		if(function){
+		// ugly but suppresses a warning
+		if (f.template target<typename of::priv::callable_traits<F>::function_ptr>()) {
+			auto function = f.template target<typename of::priv::callable_traits<F>::function_ptr>();
 			return make_function_id((ofEvent<void>*)nullptr,*function);
-		}else{
+		}
+		else {
 			return of::priv::make_function_id();
 		}
 	}
