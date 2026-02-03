@@ -3890,7 +3890,7 @@ void ofGLProgrammableRenderer::configureLinesBundleFromMesh(LinesBundle& aLinesB
 //				nvert = glm::vec4(cachedNextVert, 1.f);
 				if( i != targetNumPs - 1 || (i == targetNumPs - 1 && bClosed) ) {
 					// loop through and find a good next vert //
-					for( int ni = i+2; ni < targetNumPs; ni++ ) {
+					for( size_t ni = i+2; ni < targetNumPs; ni++ ) {
 						nindex = (ni) % numPs;
 						if (srcHasIndices) {
 							nindex = srcIndices[nindex];

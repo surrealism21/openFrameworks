@@ -516,20 +516,20 @@ static ofURLFileLoader & getFileLoader() {
 	return *fileLoader;
 }
 
-ofHttpRequest::ofHttpRequest()
-	: saveTo(false)
-	, method(GET)
-	, id(nextID++) {
+ofHttpRequest::ofHttpRequest() {
+	saveTo = false;
+	method = GET;
+	id = nextID++;
 }
 
-ofHttpRequest::ofHttpRequest(const string & url, const string & name, bool saveTo, bool autoClose, bool verbose)
-	: url(url)
-	, name(name)
-	, saveTo(saveTo)
-	, method(GET)
-	, id(nextID++)
-	, close(autoClose)
-	, verbose(verbose){
+ofHttpRequest::ofHttpRequest(const string & url, const string & name, bool saveTo, bool autoClose, bool verbose) {
+	this->url = url;
+	this->name = name;
+	this->save = saveTo;
+	this->method = GET;
+	this->id = nextID++;
+	this->close = autoClose;
+	this->verbose = verbose;
 }
 
 int ofHttpRequest::getId() const {
