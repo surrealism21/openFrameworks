@@ -525,7 +525,7 @@ ofHttpRequest::ofHttpRequest() {
 ofHttpRequest::ofHttpRequest(const string & url, const string & name, bool saveTo, bool autoClose, bool verbose) {
 	this->url = url;
 	this->name = name;
-	this->save = saveTo;
+	this->saveTo = saveTo;
 	this->method = GET;
 	this->id = nextID++;
 	this->close = autoClose;
