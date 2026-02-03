@@ -1470,6 +1470,8 @@ void ofDirectory::reset(){
 }
 
 //------------------------------------------------------------------------------------------------------------
+
+/*
 static bool natural(const ofFile& a, const ofFile& b) {
 	string aname = a.getBaseName(), bname = b.getBaseName();
 	int aint = ofToInt(aname), bint = ofToInt(bname);
@@ -1479,7 +1481,7 @@ static bool natural(const ofFile& a, const ofFile& b) {
 		return a < b;
 	}
 }
-
+*/
 
 //------------------------------------------------------------------------------------------------------------
 struct StringSort{
