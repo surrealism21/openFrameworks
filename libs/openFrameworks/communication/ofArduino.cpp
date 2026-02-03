@@ -727,6 +727,7 @@ void ofArduino::processSysExData(vector <unsigned char> data) {
 				it++;
 			}
 			i2creply.data = str;
+			// Depracated, I have no idea how to properly replace this with a functional... function.
 			ofNotifyEvent(EI2CDataReceived, i2creply, this);
 		}
 		else {
