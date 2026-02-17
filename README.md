@@ -8,5 +8,6 @@ This fork is in development for my game engine. You can use this, if you want to
   - FULL shared library functionality
   - getting this merged LMAO
   - Remove all Objective-C from codebase (not possible because of apple sadly)
+  - c++ 26
 
 This fork is probably horribly outdated because of my OCD brain renaming all the h files to hpp. Please use the mainline of fork if you want the latest features
