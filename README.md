@@ -11,3 +11,5 @@ This fork is in development for my game engine. You can use this, if you want to
   - c++ 26
 
 This fork is probably horribly outdated because of my OCD brain renaming all the h files to hpp. Please use the mainline of fork if you want the latest features
+
+None of the code here is ai except for one time where CoPiolottoto generated a commit message (sorry)
